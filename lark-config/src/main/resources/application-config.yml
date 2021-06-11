@@ -1,0 +1,30 @@
+spring:
+  #邮箱配置
+  mail:
+    host: smtp.qq.com #邮件服务器
+    username: xxxx@qq.com #发送者邮箱账号
+    password: xxx #发送者密钥
+    default-encoding: utf-8
+    port: 465   #端口号465或587
+    protocol: smtp
+    properties:
+      mail:
+        debug:
+          false
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+#日志配置
+logging:
+  level:
+    ink.lch.dao: debug
+  config: classpath:logback-boot.xml
+
+#httpclient配置
+http:
+  max-total: 100
+  default-max-per-route: 20
+  connect-timeout: 1000
+  connection-request-timeout: 500
+  socket-timeout: 10000
+  stale-connection-check-enabled: true

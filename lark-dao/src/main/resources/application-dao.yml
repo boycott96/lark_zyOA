@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: Algmis-mysql
+    url: jdbc:mysql://localhost:3306/robot_demo
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: qwer8023
+mybatis:
+  mapper-locations: classpath*:sqlmap/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: 'null'

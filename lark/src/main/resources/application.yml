@@ -1,0 +1,17 @@
+#服务配置
+server:
+  port: 8082
+  data_center_id: 1
+  work_id: 1
+
+#spring的启动文件配置
+spring:
+  profiles:
+    include: api, dao, redis, config
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+
+lch:
+  time: 1800
