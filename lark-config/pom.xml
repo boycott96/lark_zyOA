@@ -9,11 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>lch.config</groupId>
     <artifactId>lark-config</artifactId>
+    <version>1.0.0</version>
 
     <dependencies>
         <dependency>
-            <groupId>ink.lch.dao</groupId>
+            <groupId>lch.dao</groupId>
             <artifactId>lark-dao</artifactId>
             <version>1.0.0</version>
         </dependency>
@@ -36,7 +38,7 @@
         </dependency>
 
         <dependency>
-            <groupId>ink.lch.redis</groupId>
+            <groupId>lch.redis</groupId>
             <artifactId>lark-redis</artifactId>
             <version>1.0.0</version>
         </dependency>
@@ -72,6 +74,10 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
             <version>2.5.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
     </dependencies>
 </project>

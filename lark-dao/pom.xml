@@ -8,13 +8,13 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ink.lch.dao</groupId>
+    <groupId>lch.dao</groupId>
     <artifactId>lark-dao</artifactId>
     <version>1.0.0</version>
 
     <dependencies>
         <dependency>
-            <groupId>ink.lch.bean</groupId>
+            <groupId>lch.bean</groupId>
             <artifactId>lark-bean</artifactId>
             <version>1.0.0</version>
         </dependency>

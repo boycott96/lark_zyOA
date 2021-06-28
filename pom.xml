@@ -37,6 +37,7 @@
         <module>lark-dao</module>
         <module>lark-redis</module>
         <module>lark-api</module>
+        <module>lark-quartz</module>
     </modules>
 
     <properties>

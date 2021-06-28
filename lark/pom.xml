@@ -7,7 +7,7 @@
         <artifactId>lark-app</artifactId>
         <version>1.0</version>
     </parent>
-    <groupId>com.lch</groupId>
+    <groupId>lch.app</groupId>
     <artifactId>lark</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
@@ -16,25 +16,25 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.lch.api</groupId>
+            <groupId>lch.api</groupId>
             <artifactId>lark-api</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
-            <groupId>ink.lch.dao</groupId>
+            <groupId>lch.dao</groupId>
             <artifactId>lark-dao</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
-            <groupId>com.lch.app</groupId>
+            <groupId>lch.config</groupId>
             <artifactId>lark-config</artifactId>
-            <version>1.0</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
-            <groupId>ink.lch.bean</groupId>
+            <groupId>lch.bean</groupId>
             <artifactId>lark-bean</artifactId>
             <version>1.0.0</version>
         </dependency>
