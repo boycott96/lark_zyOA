@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@SpringBootApplication(scanBasePackages={"ink.lch.**"})
-@MapperScan({"ink.lch.dao.**"})
+@SpringBootApplication(scanBasePackages={"lch.**"})
+@MapperScan({"lch.dao.**"})
 @EnableScheduling
 public class LarkApplication {
 
