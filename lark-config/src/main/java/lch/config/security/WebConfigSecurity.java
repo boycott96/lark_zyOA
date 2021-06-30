@@ -18,8 +18,10 @@ public class WebConfigSecurity extends WebSecurityConfigurerAdapter {
     // 安全连接机制
     @Override
     public void configure(HttpSecurity http) throws Exception {
-
-        http.csrf().disable().authorizeRequests()
-                .antMatchers("/lch/user/checkEmail").permitAll();
+        http
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/lch/user/checkEmail")
+                .permitAll();
     }
 }

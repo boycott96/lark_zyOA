@@ -18,8 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 public class AnyController {
 
-    private final String verification_type = "url_verification";
-
     private final WebsocketServer websocketServer;
 
     private final LarkApi larkApi;

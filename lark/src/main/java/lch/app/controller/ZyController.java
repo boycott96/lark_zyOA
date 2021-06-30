@@ -8,6 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
@@ -41,5 +42,10 @@ public class ZyController {
             log.error("数据异常");
         }
         return zyService.ssoLogin(map.get("name").toString(), response);
+    }
+
+    @GetMapping(value = "/ssoLogout")
+    public ResultBody ssoLogout(HttpServletRequest request, HttpServletResponse response) {
+        return new ResultBody();
     }
 }
